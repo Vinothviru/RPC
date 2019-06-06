@@ -31,7 +31,7 @@ public class ClientReq extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		URL url=new URL("http://10.51.6.233:8080/Server/DataServer");//http://10.51.5.176:port/Server/DataServer
+		URL url=new URL("http://10.51.5.176:8080/Server/DataServer");//http://10.51.5.176:port/Server/DataServer
 		HttpURLConnection con=(HttpURLConnection)url.openConnection();
 		con.setRequestMethod("GET");
 		if(con.getResponseCode()==200)
